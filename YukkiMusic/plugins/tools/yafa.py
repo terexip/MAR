@@ -97,7 +97,7 @@ async def paste_func(_, message: Message):
         await m.edit("فتح الرابط", reply_markup=InlineKeyboardMarkup(kb))
 
 
-@app.on_message(command(["ميديا", "/tm", "tgm"]))
+@app.on_message(command(["تلجراف-ميديا", "/tm", "tgm"]))
 async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
@@ -126,6 +126,6 @@ async def invitelink(client, message):
     try:
         invitelink = await client.export_chat_invite_link(chid)
     except:
-        return await message.reply_text("قم برفعي مسؤول في المجموعة أولا ؟")
+        return await message.reply_text("قم برفعي مشرف في المجموعة أولا ؟")
     await message.reply_text(f"**تم إنشاء رابط الدعوة بنجاح :**\n {invitelink}")
     
