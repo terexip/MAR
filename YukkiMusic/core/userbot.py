@@ -57,15 +57,15 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("BNBRB")
-                await self.one.join_chat("II_EBOTS")
-                await self.one.join_chat("II_EBOTS")
+                await self.one.join_chat("SONIC_source")
+                await self.one.join_chat("SONIC_source_SUPPORT")
+                await self.one.join_chat("APKFM")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
                 )
             except:
                 LOGGER(__name__).error(
@@ -88,15 +88,15 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("II_EBOTS")
-                await self.two.join_chat("BNBRB")
-                await self.two.join_chat("II_EBOTS")
+                await self.two.join_chat("SONIC_source")
+                await self.two.join_chat("SONIC_source_SUPPORT")
+                await self.two.join_chat("APKFM")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
                 )
             except:
                 LOGGER(__name__).error(
@@ -119,15 +119,15 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("II_EBOTS")
-                await self.three.join_chat("BNBRB")
-                await self.three.join_chat("II_EBOTS")
+                await self.three.join_chat("SONIC_source")
+                await self.three.join_chat("SONIC_source_SUPPORT")
+                await self.three.join_chat("APKFM")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
                 )
             except:
                 LOGGER(__name__).error(
@@ -150,15 +150,15 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("II_EBOTS")
-                await self.four.join_chat("BNBRB")
-                await self.four.join_chat("II_EBOTS")
+                await self.four.join_chat("SONIC_source")
+                await self.four.join_chat("SONIC_source_SUPPORT")
+                await self.four.join_chat("APKFM")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
                 )
             except:
                 LOGGER(__name__).error(
@@ -181,15 +181,15 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("II_EBOTS")
-                await self.five.join_chat("II_EBOTS")
-                await self.five.join_chat("BNBRB")
+                await self.five.join_chat("SONIC_source")
+                await self.five.join_chat("SONIC_source_SUPPORT")
+                await self.five.join_chat("APKFM")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
                 )
             except:
                 LOGGER(__name__).error(
