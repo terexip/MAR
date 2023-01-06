@@ -55,6 +55,12 @@ LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["اللغه","اللغة"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def langs_command(client, message: Message, _):
     keyboard = lanuages_keyboard(_)
