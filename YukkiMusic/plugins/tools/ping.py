@@ -29,6 +29,12 @@ PING_COMMAND = get_command("PING_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["بنك"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def ping_com(client, message: Message, _):
     response = await message.reply_photo(
