@@ -51,6 +51,8 @@ HELP_5 = """
 /gban + معرف الشخص لحظره عام
 /ungban + معرف الشخص لالغاء حظره عام
 /gbannedusers - المحظورين عام
+/activevoice  - لعرض المجموعات التي شغلت الموسيقى
+/activevideo  - لعرض المجموعات التي شغلت الفديو
 `/broadcast -user -assistant -pin + الرسالة لأذاعتها`
 """
 
