@@ -32,6 +32,12 @@ RESTART_COMMAND = get_command("RESTART_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["حدث"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def reload_admin_cache(client, message: Message, _):
     try:
@@ -56,6 +62,12 @@ async def reload_admin_cache(client, message: Message, _):
 
 @app.on_message(
     filters.command(RESTART_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
+@app.on_message(
+    command(["ريستارت"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
