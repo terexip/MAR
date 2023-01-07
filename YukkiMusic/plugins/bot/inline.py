@@ -54,10 +54,10 @@ async def inline_query_handler(client, query):
                 ]
             )
             searched_text = f"""
-❇️**عنوان :** [{title}]({link})
+❇️**الاسم : ** [{title}]({link})
 
-⏳**مدة :** {duration} Mins
-👀**الآراء :** `{views}`
+⏳**مدة : ** {duration} Mins
+👀**المشاهدات : ** `{views}`
 ⏰**وقت النشر :** {published}
 🎥**اسم القناة :** {channel}
 📎**رابط القناة :** [Visit From Here]({channellink})
