@@ -14,7 +14,6 @@ from config import BANNED_USERS
 from strings import get_command
 from strings.filters import command
 from YukkiMusic import app
-from strings.filters import command
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import is_muted, mute_off
 from YukkiMusic.utils.decorators import AdminRightsCheck
