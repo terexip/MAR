@@ -12,6 +12,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
