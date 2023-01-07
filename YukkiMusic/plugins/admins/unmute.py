@@ -29,7 +29,7 @@ UNMUTE_COMMAND = get_command("UNMUTE_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["كمل"])
+    command(["تكلم"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
