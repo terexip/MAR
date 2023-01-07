@@ -27,7 +27,7 @@ CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["ربط القناة"])
+    command(["ربط القناة","ربط قناة"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
