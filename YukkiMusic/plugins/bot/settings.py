@@ -51,6 +51,12 @@ SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["اعدادات"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def settings_mar(client, message: Message, _):
     buttons = setting_markup(_)
