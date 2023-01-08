@@ -128,3 +128,7 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(
             helpers.HELP_6, reply_markup=keyboard
         )
+    elif cb == "hb8":
+        await CallbackQuery.edit_message_text(
+            helpers.HELP_8, reply_markup=keyboard
+        )
