@@ -158,7 +158,7 @@ async def start_comm(client, message: Message, _):
 📎**رابط القناة : ** [اضغط هنا]({channellink})
 🔗**رابط الفيديو : ** [اضغط هنا]({link})
 
-⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
+⚡️ تم البحث بواسطة {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
