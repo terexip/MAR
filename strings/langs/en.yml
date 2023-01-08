@@ -378,8 +378,8 @@ maint_3 : "وضع الصيانة معطل"
 
 #log
 log_1 : "**إستعمال:**\n/logger [enable | disable]"
-log_2 : "تمكين الاستخبارات"
-log_3 : "تعطيل الاستخبارات"
+log_2 : "تم تفعيل الاستخبارات"
+log_3 : "تم تعطيل الاستخبارات"
 
 #videomode
 vidmode_1 : "**الاستعمال:**\n/videomode [download|m3u8]"
