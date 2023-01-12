@@ -41,7 +41,7 @@ async def activevc(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await mystic.edit_text("No Active Voice Chats")
+        await mystic.edit_text("لا توجد مجموعات قامت بتشغيل الموسيقى")
     else:
         await mystic.edit_text(
             f"**المجموعات التي قامت بتشغيل الموسيقى:-**\n\n{text}",
@@ -69,7 +69,7 @@ async def activevi_(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await mystic.edit_text("No Active Voice Chats")
+        await mystic.edit_text("لا توجد مجموعات قامت بتشغيل الفيديو")
     else:
         await mystic.edit_text(
             f"**المجموعات التي قامت بتشغيل الفيديو:-**\n\n{text}",
