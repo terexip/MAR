@@ -76,7 +76,7 @@ async def reload_admin_cache(client, message: Message, _):
 @AdminActual
 async def restartbot(client, message: Message, _):
     mystic = await message.reply_text(
-        f"Please Wait.. Restarting {MUSIC_BOT_NAME} for your chat.."
+        f"انتظر قليلاً.. جارِ اعادة تشغيل بوت {MUSIC_BOT_NAME} في مجموعتك.."
     )
     await asyncio.sleep(1)
     try:
@@ -96,7 +96,7 @@ async def restartbot(client, message: Message, _):
         except:
             pass
     return await mystic.edit_text(
-        "Successfully restarted. Try playing now.."
+        "تم اعادة تشغيل البوت. يمكنك تشغيل الموسيقى الان.."
     )
 
 
