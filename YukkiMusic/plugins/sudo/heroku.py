@@ -346,6 +346,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit(
-        "Reboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
+        "ستتم اعادة تشغيل بوت الموسيقى! انتظر دقيقه ليتم اعادة تشغيل البوت بنجاح."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
