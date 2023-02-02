@@ -15,42 +15,42 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "27422649",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "d13c8552f11297b976254c242a518576",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
         "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
+        "value": "False",
         "required": false
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "5558125749:AAE7sjywbvf8-THu0Ke71DYm7ZGwrcPJlqo",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "",
+        "value": "mongodb+srv://lucifer:ASShaw96@lucifer.vuows.mongodb.net/lucifer?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "",
+        "value": "SONIC-MUSIC",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "5301059909",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
+        "value": "BABBnJ0tSVGzh2VYe5gIhRB5clEOMjUnnRyI8m6VAt6r6yxsjcn0g4n0xTsTGTQzP-09czVp6Jm6iyncgetWNBAnJcZUTLpyK0M57Qew48Y2_o3-GbMv-Yoe3amc2aCYMg1mpe9S4IvOLMt0lHjjFuLG4bJ8zi_NU42s1hClQBzawMyW1TaJv6LH4kcfky3xJAFihG4zCRs9T9OUHLB8f26-EWSJdukZAlFqB_q19tLL4prRJX9-cmRrgu5u9EwjCCQDk48EA8zaUi11RAm1dSSvqonkc1dVprJVt-KG-lnTil1VcLaTEKXLtCNCK3dlSJUTgsw-Qto4WQW4bWySRDROAAAAAU7s4CcA",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -65,12 +65,12 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1001512713295",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamYukki/YukkiMusicBot",
+        "value": "https://github.com/SONIC-MUSIC-BOT/MAR",
         "required": true
       },
       "UPSTREAM_BRANCH": {
