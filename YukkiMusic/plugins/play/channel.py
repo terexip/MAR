@@ -26,6 +26,12 @@ CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["ربط القناة","ربط قناة"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @AdminActual
 async def playmode_(client, message: Message, _):
     if len(message.command) < 2:
