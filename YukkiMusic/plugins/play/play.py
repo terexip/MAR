@@ -57,7 +57,12 @@ async def check_is_joined(message):
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
-
+@app.on_message(
+    command(["استماع","تشغيل"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @app.on_message(
     filters.command(PLAY_COMMAND)
     & filters.group
