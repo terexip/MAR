@@ -59,7 +59,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/SONIC-MUSIC-BOT/MAR",
 )
 BOT_USERNAME = getenv(
-    "BOT_USERNAME", "SONIC_S_BOT"
+    "BOT_USERNAME", "SONIC_M_BOT"
 )  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
