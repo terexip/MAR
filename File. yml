@@ -1,0 +1,2 @@
+- name: Preview Environments
+  uses: UffizziCloud/preview-action@v2.6.1
