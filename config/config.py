@@ -68,13 +68,13 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "SONIC_source"
+    "CHANNEL_SUDO", "Manarat_Alqaniten"
 )  # معرف قناتك بدون @
 YAFA_NAME = getenv(
-    "YAFA_NAME", "𝗦𝗢𝗡𝗜𝗖 𝗦𝗢𝗨𝗥𝗖𝗘 ⚡"
+    "YAFA_NAME", "✲°• منتدى منارة القانتين •°✲"
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/SONIC_source"
+   " YAFA_CHANNEL", "https://t.me/Manarat_Alqaniten"
 )  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/SONIC_source"
