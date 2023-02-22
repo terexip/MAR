@@ -8,6 +8,8 @@ hachoir
 heroku3
 lyricsgenius
 motor
+flask
+flask_restful
 pillow
 psutil
 py-tgcalls==0.8.6
