@@ -32,6 +32,8 @@ services:
         sync: false
       - key: BOT_TOKEN
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.5
       - key: UPSTREAM_REPO
         value: https://github.com/SONIC-MUSIC-BOT/MAR
       - key: UPSTREAM_BRANCH
