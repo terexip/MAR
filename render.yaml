@@ -9,7 +9,7 @@ services:
     name: MAR
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 bash start
+    startCommand: python3 jep.py & bash start
     region: frankfurt
     repo: https://github.com/SONIC-MUSIC-BOT/MAR     
     branch: master
