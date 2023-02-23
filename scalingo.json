@@ -2,15 +2,7 @@
     "name": "SONIC MUSIC - سورس سونك",
     "description": "اللهم صلِ على محمد وآل محمد",
     "addons": ["scalingo-postgresql"],
-    "keywords": [
-    "python3",
-    "telegram",
-    "bot",
-    "Yukki",
-    "YukkiMusicBot",
-    "telegram-bot",
-    "pyrogram"
-    ], 
+    "keywords": ["python3", "telegram","scalingo"], 
     "repository": "https://github.com/SONIC-MUSIC-BOT/MAR",
   "stack": "container",
     "env": {
