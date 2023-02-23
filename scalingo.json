@@ -1,17 +1,17 @@
 {
-    "name": "Aljoker - سورس الجوكر",
+    "name": "SONIC MUSIC - سورس سونك",
     "description": "اللهم صلِ على محمد وآل محمد",
     "addons": ["scalingo-postgresql"],
     "keywords": ["Aljoker", "userbot","scalingo"],
-    "repository": "https://github.com/jepthoniq/lMl10l",
+    "repository": "https://github.com/SONIC-MUSIC-BOT/MAR",
   "stack": "container",
     "env": {
-        "ALIVE_NAME": {
-            "description": "ضع هنا اسم حسابك على التليجرام",
+        "AUTO_LEAVING_ASSISTANT": {
+            "description": "لمغادرة الحساب المساعد من المجموعات",
             "required": true,
-            "value":""
+            "value": "False"
         },
-        "APP_ID": {
+        "API_ID": {
             "description": "ضع هنا الايبي ايدي الخاص بك",
             "required": true,
             "value":""
@@ -25,25 +25,40 @@
             "description": "هنا ضع كود سيشن بايروجرام او سيشن تيليثون",
             "required": true
         },
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "ضع توكن البوت المساعد الخاص بك",
             "required": true,
             "value":""
         },
-        "TG_BOT_USERNAME": {
-            "description": "ضع توكن البوت المساعد الخاص بك",
+        "MUSIC_BOT_NAME": {
+            "description": "ضع اسم البوت المساعد الخاص بك",
             "required": true,
             "value":""
         },
-        "TZ": {
-            "description": "ضع هنا المنطقة الزمنيه الخاصه بك القارة وعاصمه بلدك",
+        "MONGO_DB_URI": {
+            "description": "رابط قاعدة البيانات",
             "required": true,
-            "value": "Asia/Baghdad"
+            "value": "mongodb+srv://lucifer:ASShaw96@lucifer.vuows.mongodb.net/lucifer?retryWrites=true&w=majority"
         },
-        "ENV": {
+        "UPSTREAM_BRANCH": {
+            "description": "لا تغيرها",
+            "required": true,
+            "value": "master"
+        },
+        "LOG_GROUP_ID": {
+            "description": "ايدي مجموعة الاستخبارات",
+            "required": true,
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "ايدي حساب المطور",
+            "required": true,
+            "value": ""
+        },
+        "UPSTREAM_REPO": {
             "description": "لا تغيره نهائيا!",
             "required": true,
-            "value": "ANYTHING"
+            "value": "https://github.com/SONIC-MUSIC-BOT/MAR"
         }
 
     }
