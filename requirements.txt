@@ -26,3 +26,4 @@ tgcrypto
 youtube-search
 youtube-search-python
 git+https://github.com/yt-dlp/yt-dlp.git
+git+https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
