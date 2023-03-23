@@ -53,7 +53,7 @@ async def clean_mode(client, update, users, chats):
         return
     message_id = update.max_id
     chat_id = int(f"-100{update.channel_id}")
-    if not await is_cleanmode_on(chat_id):
+    if not await is_cleanmode_off(chat_id):
         return
     if chat_id not in clean:
         clean[chat_id] = []
