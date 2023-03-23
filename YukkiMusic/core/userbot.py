@@ -59,13 +59,13 @@ class Userbot(Client):
             try:
                 await self.one.join_chat("SONIC_source")
                 await self.one.join_chat("SONIC_source_SUPPORT")
-                await self.one.join_chat("APKFM")
+                await self.one.join_chat("Manarat_Alqaniten")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
+                    config.LOG_GROUP_ID, "تم تشغيل الحساب المساعد"
                 )
             except:
                 LOGGER(__name__).error(
@@ -90,13 +90,13 @@ class Userbot(Client):
             try:
                 await self.two.join_chat("SONIC_source")
                 await self.two.join_chat("SONIC_source_SUPPORT")
-                await self.two.join_chat("APKFM")
+                await self.two.join_chat("Manarat_Alqaniten")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
+                    config.LOG_GROUP_ID, "تم تشغيل الحساب المساعد"
                 )
             except:
                 LOGGER(__name__).error(
@@ -121,13 +121,13 @@ class Userbot(Client):
             try:
                 await self.three.join_chat("SONIC_source")
                 await self.three.join_chat("SONIC_source_SUPPORT")
-                await self.three.join_chat("APKFM")
+                await self.three.join_chat("Manarat_Alqaniten")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
+                    config.LOG_GROUP_ID, "تم تشغيل الحساب المساعد"
                 )
             except:
                 LOGGER(__name__).error(
@@ -152,13 +152,13 @@ class Userbot(Client):
             try:
                 await self.four.join_chat("SONIC_source")
                 await self.four.join_chat("SONIC_source_SUPPORT")
-                await self.four.join_chat("APKFM")
+                await self.four.join_chat("Manarat_Alqaniten")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
+                    config.LOG_GROUP_ID, "تم تشغيل الحساب المساعد"
                 )
             except:
                 LOGGER(__name__).error(
@@ -183,13 +183,13 @@ class Userbot(Client):
             try:
                 await self.five.join_chat("SONIC_source")
                 await self.five.join_chat("SONIC_source_SUPPORT")
-                await self.five.join_chat("APKFM")
+                await self.five.join_chat("Manarat_Alqaniten")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "الحساب المساعد جاهز"
+                    config.LOG_GROUP_ID, "تم تشغيل الحساب المساعد"
                 )
             except:
                 LOGGER(__name__).error(
