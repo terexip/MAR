@@ -33,7 +33,7 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "بوت الموسيقى جاهز"
+                config.LOG_GROUP_ID, "تم تشغيل البوت"
             )
         except:
             LOGGER(__name__).error(
