@@ -122,11 +122,11 @@ async def telegraph(client, message):
         
 @app.on_message(filters.voice_chat_started)
 async def brah(client, message):
-       await message.reply("تم بدا محادثة صواتية جديدة.")
+       await message.reply("تم بدأ محادثة صوتية جديدة.")
        
 @app.on_message(filters.voice_chat_ended)
 async def brah2(client, message):
-       await message.reply("تم انهاء المحادثه الصواتيه.")
+       await message.reply("تم انهاء المحادثه الصوتيه.")
        
 @app.on_message(filters.voice_chat_members_invited)
 async def fuckoff(client, message):
