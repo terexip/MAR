@@ -11,7 +11,7 @@ from pyrogram.types import (InlineKeyboardButton,
 from telegraph import upload_file
 from traceback import format_exc
 from YukkiMusic import app
-
+from pyrogram.types import *
 
 @app.on_message(command(["ترجمة","/tr"]))
 async def tr(_, message):
