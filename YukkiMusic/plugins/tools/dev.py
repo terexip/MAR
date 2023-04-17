@@ -29,12 +29,15 @@ async def yas(client, message):
                 [
                     InlineKeyboardButton(
                         name, url=f"https://t.me/{usr.username}")
-                  ],
-                ],
-                [ 
+                ],[ 
+                    
                    InlineKeyboardButton(
                      text=f"{YAFA_NAME}", url=f"{YAFA_CHANNEL}",)
                 ],
+                       
             ]
+                       
         ),
+                    
     )
+ 
