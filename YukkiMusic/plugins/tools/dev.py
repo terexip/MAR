@@ -23,7 +23,7 @@ async def yas(client, message):
     usr = await client.get_chat("Huseenytiq")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞  𝙎𝙊𝙉𝙄𝘾 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞  𝙎𝙊𝙉𝙄𝘾 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**", 
+    await message.reply_photo(photo,       caption=f"** 𝙎𝙊𝙉𝙄𝘾 • 𝙎𝙊𝙐𝙍𝘾𝙀 \n\n‍ ¦المطور :{name}\n ¦معرف المطور  :@{usr.username}\n ¦ايدي المطور  :`{usr.id}`\n ¦بايو المطور  :{usr.bio}\n\n**  𝙎𝙊𝙉𝙄𝘾 • 𝙎𝙊𝙐𝙍𝘾𝙀 **", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
