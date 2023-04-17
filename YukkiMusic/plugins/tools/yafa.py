@@ -119,28 +119,7 @@ async def telegraph(client, message):
     finally:
         os.remove(download_location)
 
-@app.on_message(
-     command(["المطور","مطور","المبرمج"])
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/46f73c44c516aedee6900.jpg",
-caption=f"""**ꔷ ⌔︙𝗦𝗢𝗡𝗜𝗖 𝗦𝗢𝗨𝗥𝗖𝗘 ⚡**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton(
-                    " المطور ◍", url=f"https://t.me/Huseenytiq"
-                ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "✲°• منتدى منارة القانتين •°✲", url=f"https://t.me/Manarat_Alqaniten"),
-                ],
-            ]
-        ),
-    )
+
         
 @app.on_message(filters.voice_chat_started)
 async def brah(client, message):
