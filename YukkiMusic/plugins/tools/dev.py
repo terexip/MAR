@@ -29,7 +29,7 @@ async def yas(client, message):
                 [
                     InlineKeyboardButton(
                         name, url=f"https://t.me/{usr.username}")
-                  ),
+                  ],
                 ],
                 [ 
                    InlineKeyboardButton(
