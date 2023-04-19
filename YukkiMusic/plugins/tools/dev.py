@@ -49,15 +49,15 @@ async def yas(client, message):
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/44fdda1ee7bf26e828a50.jpg",
-        caption=f"""⌔︙معلومات السورس \n\n [⌔︙سونك سورس](https://t.me/SONIC_source) \n [⌔︙مطور السورس](https://t.me/Huseenytiq) \n [⌔︙بوت التواصل](https://t.me/Huseenytiq_bot) \n [⌔︙مجموعة الدعم](https://t.me/SONIC_source_SUPPORT)""",
+        caption=f"""⌔︙معلومات السورس \n\n ⌔︙ [سونك سورس] (https://t.me/SONIC_source) \n\n ⌔︙ [مطور السورس] (https://t.me/Huseenytiq) \n\n ⌔︙ [بوت التواصل](https://t.me/Huseenytiq_bot) \n\n ⌔︙ [مجموعة الدعم] (https://t.me/SONIC_source_SUPPORT)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⌔︙مطور السورس", url=f"https://t.me/Huseenytiq"), 
+                        "مطور السورس", url=f"https://t.me/Huseenytiq"), 
                 ],[ 
                     InlineKeyboardButton(
-                        "⌔︙𝗦𝗢𝗡𝗜𝗖 𝗦𝗢𝗨𝗥𝗖𝗘 ⚡", url=f"https://t.me/SONIC_source"),
+                        "𝗦𝗢𝗡𝗜𝗖 𝗦𝗢𝗨𝗥𝗖𝗘 ⚡", url=f"https://t.me/SONIC_source"),
                 ],[
                     InlineKeyboardButton(
                       text=f"{YAFA_NAME}", url=f"{YAFA_CHANNEL}",)
