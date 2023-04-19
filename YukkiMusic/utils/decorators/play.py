@@ -35,6 +35,11 @@ def PlayWrapper(command):
                     "**Private Music Bot**\n\nOnly for authorized chats from the owner. Ask my owner to allow your chat first."
                 )
                 return await app.leave_chat(message.chat.id)
+        if await is_commanddelete_on(message.chat.id):
+            try:
+                await message.delete()
+            except:
+                pass
         language = await get_lang(message.chat.id)
         _ = get_string(language)
         audio_telegram = (
