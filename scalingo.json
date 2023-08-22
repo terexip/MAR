@@ -46,7 +46,7 @@
             "value": "master"
         },
         "LOG_GROUP_ID": {
-            "description": "ايدي مجموعة الاستخبارات",
+            "description": "ايدي مجموعة السجلات",
             "required": true,
             "value": ""
         },
