@@ -1,9 +1,9 @@
 {
-    "name": "SONIC MUSIC - سورس سونك",
+    "name": "خلي اسم سورسك ",
     "description": "اللهم صلِ على محمد وآل محمد",
     "addons": ["scalingo-postgresql"],
     "keywords": ["python3", "telegram","scalingo"], 
-    "repository": "https://github.com/SONIC-MUSIC-BOT/MAR",
+    "repository": "خلي رابط المستودع ",
   "stack": "container",
     "env": {
         "AUTO_LEAVING_ASSISTANT": {
@@ -38,7 +38,7 @@
         "MONGO_DB_URI": {
             "description": "رابط قاعدة البيانات",
             "required": true,
-            "value": "mongodb+srv://lucifer:ASShaw96@lucifer.vuows.mongodb.net/lucifer?retryWrites=true&w=majority"
+            "value": ""
         },
         "UPSTREAM_BRANCH": {
             "description": "لا تغيرها",
@@ -58,7 +58,7 @@
         "UPSTREAM_REPO": {
             "description": "لا تغيره نهائيا!",
             "required": true,
-            "value": "https://github.com/SONIC-MUSIC-BOT/MAR"
+            "value": ""
         }
 
     }
