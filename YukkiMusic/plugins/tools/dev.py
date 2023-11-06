@@ -20,7 +20,7 @@ from random import  choice, randint
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("Huseenytiq")
+    usr = await client.get_chat("D_3_X")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"** ⌔︙معلومات المطور \n ⌔︙الاسم : {name}\n ⌔︙المعرف : @{usr.username}\n ⌔︙الايدي : `{usr.id}`\n ⌔︙البايو : {usr.bio}\n\n****", 
@@ -48,8 +48,8 @@ async def yas(client, message):
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/44fdda1ee7bf26e828a50.jpg",
-        caption=f"""⌔︙معلومات السورس \n\n ⌔︙ [سونك سورس](https://t.me/SONIC_source) \n\n ⌔︙ [مطور السورس](https://t.me/Huseenytiq) \n\n ⌔︙ [بوت التواصل](https://t.me/Huseenytiq_bot) \n\n ⌔︙ [مجموعة الدعم](https://t.me/SONIC_source_SUPPORT)""",
+        photo=f"https://telegra.ph/file/a4cbf36765852612be108.jpg",
+        caption=f"""⌔︙معلومات السورس \n\n ⌔︙ [تيركس سورس](https://t.me/SONIC_source) \n\n ⌔︙ [مطور السورس](https://t.me/Terex_info) \n\n ⌔︙ [التواصل](https://t.me/d_3_x) \n\n ⌔︙ [مجموعة الدعم](https://t.me/SONIC_source_SUPPORT)""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -57,7 +57,7 @@ async def huhh(client: Client, message: Message):
                         "مطور السورس", url=f"https://t.me/Huseenytiq"), 
                 ],[ 
                     InlineKeyboardButton(
-                        "𝗦𝗢𝗡𝗜𝗖 𝗦𝗢𝗨𝗥𝗖𝗘 ⚡", url=f"https://t.me/SONIC_source"),
+                        "Terex Info ⚡", url=f"https://t.me/Terex_info"),
                 ],[
                     InlineKeyboardButton(
                       text=f"{YAFA_NAME}", url=f"{YAFA_CHANNEL}",)
