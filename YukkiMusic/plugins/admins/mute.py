@@ -30,7 +30,7 @@ MUTE_COMMAND = get_command("MUTE_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["اصمت","اسكت"])
+    command(["كتم","اسكت"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS

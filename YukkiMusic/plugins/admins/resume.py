@@ -29,7 +29,7 @@ RESUME_COMMAND = get_command("RESUME_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["استمر","اكمل"])
+    command(["استمر","كمل"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
