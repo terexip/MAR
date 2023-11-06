@@ -56,10 +56,10 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/SONIC-MUSIC-BOT/MAR",
+    "https://github.com/Terex2/MAR",
 )
 BOT_USERNAME = getenv(
-    "BOT_USERNAME", "SONIC_S_BOT"
+    "BOT_USERNAME", "GU9BOT"
 )  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -68,19 +68,19 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "Manarat_Alqaniten"
+    "CHANNEL_SUDO", "Terex_Info"
 )  # معرف قناتك بدون @
 YAFA_NAME = getenv(
-    "YAFA_NAME", "✲°• منتدى منارة القانتين •°✲"
+    "YAFA_NAME", "TereX Info"
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/Manarat_Alqaniten"
+   " YAFA_CHANNEL", "https://t.me/Terex_info"
 )  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/SONIC_source"
+    "SUPPORT_CHANNEL", "https://t.me/Terex_info"
 )  # رابط قناتك
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/SONIC_source_SUPPORT"
+    "SUPPORT_GROUP", "https://t.me/II_EBOTS"
 )  # رابط كروبك
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
