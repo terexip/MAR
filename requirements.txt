@@ -23,6 +23,10 @@ gpytranslate
 speedtest-cli
 spotipy
 tgcrypto
+Flask==2.2.2
+gunicron==20.1.0
+pymongo[srv]==3.12.1
+aiohttp==3.8.1
 youtube-search
 youtube-search-python
 git+https://github.com/yt-dlp/yt-dlp.git
