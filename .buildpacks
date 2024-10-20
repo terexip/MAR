@@ -1,3 +1,8 @@
-https://github.com/Scalingo/python-buildpack.git
-https://github.com/Scalingo/nodejs-buildpack.git
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+version: 1.0
+buildpacks:
+  - name: "heroku/python"            # Buildpack الخاص ببايثون
+    version: "latest"                # يمكنك الإبقاء على latest
+  - name: "heroku/nodejs"            # إذا كنت بحاجة إلى Node.js أيضًا
+    version: "latest"                # هذه الخطوة اختيارية فقط
+  - name: "jonathanong/heroku-buildpack-ffmpeg-latest"  # Buildpack لـ FFmpeg
+    version: "latest"                # هذه الخطوة اختيارية أيضًا
