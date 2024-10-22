@@ -34,7 +34,7 @@ jobs:
       - name: Run bot
         env:
           Bot_Token: ${{ secrets.Bot_Token }}  # استخدم السر الخاص بالتوكن
-        run: python -m YukkiMusic  # استخدام __main__.py
+        run: python -m YukkiMusic  # استخدم الأمر الصحيح
 
       # خطوة لطباعة رسالة عند الانتهاء
       - name: Notify Deployment Success
