@@ -1,41 +1,39 @@
-name: Deploy Telegram Bot
+name: Run Bot
 
 on:
   push:
     branches:
-      - main  # أو الفرع الذي ترغب في تتبعه
+      - main
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
 
     steps:
-      # خطوة لعمل checkout للكود
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v2
 
-      # خطوة لإعداد Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # تأكد من أن الإصدار يطابق الإصدار الذي تستخدمه
+          python-version: '3.9'
 
-      # خطوة لتثبيت الاعتماديات
-      - name: Install dependencies
+      - name: Synchronize Time
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ntp
+          sudo service ntp stop
+          sudo ntpdate time.google.com
+          sudo service ntp start
+
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # خطوة لطباعة هيكل المجلد (اختياري)
       - name: List files
         run: ls -R
 
-      # خطوة لتشغيل البوت
-      - name: Run bot
-        env:
-          Bot_Token: ${{ secrets.Bot_Token }}  # استخدم السر الخاص بالتوكن
-        run: python -m YukkiMusic  # استخدم الأمر الصحيح
-
-      # خطوة لطباعة رسالة عند الانتهاء
-      - name: Notify Deployment Success
-        run: echo "Deployed bot telegram successfully!"
+      - name: Run Bot
+        run: |
+          python -m YukkiMusic  # أو AnonXMusic إذا كان هذا هو اسم المجلد الصحيح
