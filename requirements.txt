@@ -12,7 +12,7 @@ flask
 flask_restful
 pillow
 psutil
-py-tgcalls-kaizoku==0.9.5
+py-tgcalls
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
