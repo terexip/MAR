@@ -29,6 +29,8 @@ pymongo[srv]==3.12.1
 aiohttp==3.8.1
 youtube-search
 youtube-search-python
+multidict>=4.5,<7.0
+yarl>=1.0,<2.0
 git+https://github.com/yt-dlp/yt-dlp.git
 git+https://github.com/joetats/youtube_search@master
 git+https://github.com/alexmercerind/youtube-search-python@main 
