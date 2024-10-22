@@ -1,34 +1,37 @@
-name: Run Telegram Bot
+name: Deploy Telegram Bot
 
 on:
   push:
     branches:
-      - main  # سيعمل عند أي تحديث على الفرع الرئيسي
-  workflow_dispatch:  # لإمكانية تشغيله يدويًا من GitHub Actions
+      - main  # أو الفرع الذي ترغب في تتبعه
 
 jobs:
-  run-bot:
-    runs-on: ubuntu-latest  # يستخدم بيئة Ubuntu
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v2  # لجلب الكود من المستودع
+      # خطوة لعمل checkout للكود
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      # خطوة لإعداد Python
       - name: Set up Python
-        uses: actions/setup-python@v2  # إعداد بيئة بايثون
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # استخدم إصدار بايثون المناسب (يمكنك تغييره حسب الحاجة)
+          python-version: '3.9'  # تأكد من أن الإصدار يطابق الإصدار الذي تستخدمه
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gcc python3-dev  # تثبيت المكتبات المطلوبة لبناء aiohttp
-
+      # خطوة لتثبيت الاعتماديات
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # تأكد من وجود هذا الملف ويحتوي على المكتبات
+          pip install -r requirements.txt
 
-      - name: Run the bot
-        run: |
-          python python -m YukkiMusic  # استخدام __main__.py
+      # خطوة لطباعة هيكل المجلد (اختياري)
+      - name: List files
+        run: ls -R
+
+      # خطوة لتشغيل البوت
+      - name: Run bot
+        env:
+          Bot_Token: ${{ secrets.Bot_Token }}  # استخدم السر الخاص بالتوكن
+        run: python -m YukkiMusic.__main__  # تأكد من أن المسار صحيح
