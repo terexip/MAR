@@ -35,3 +35,7 @@ jobs:
         env:
           Bot_Token: ${{ secrets.Bot_Token }}  # استخدم السر الخاص بالتوكن
         run: python -m YukkiMusic.__main__  # تأكد من أن المسار صحيح
+
+      # خطوة لطباعة رسالة عند الانتهاء
+      - name: Notify Deployment Success
+        run: echo "Deployed bot telegram successfully!"
