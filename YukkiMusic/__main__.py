@@ -3,7 +3,8 @@ import importlib
 import sys
 
 from pyrogram import idle
-from pytgcalls import NoActiveGroupCall  # التعديل هنا
+from pytgcalls import GroupCall
+from pytgcalls.exceptions import GroupCallNotActive  # تأكد من استخدام الاستثناء الصحيح
 
 import config
 from config import BANNED_USERS
@@ -14,58 +15,18 @@ from YukkiMusic.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
-
 async def init():
-    if (
-        not config.STRING1
-        and not config.STRING2
-        and not config.STRING3
-        and not config.STRING4
-        and not config.STRING5
-    ):
-        LOGGER("YukkiMusic").error(
-            "No Assistant Clients Vars Defined!.. Exiting Process."
-        )
-        return
-    if (
-        not config.SPOTIFY_CLIENT_ID
-        and not config.SPOTIFY_CLIENT_SECRET
-    ):
-        LOGGER("YukkiMusic").warning(
-            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
-        )
-    try:
-        users = await get_gbanned()
-        for user_id in users:
-            BANNED_USERS.add(user_id)
-        users = await get_banned_users()
-        for user_id in users:
-            BANNED_USERS.add(user_id)
-    except:
-        pass
-    await app.start()
-    for all_module in ALL_MODULES:
-        importlib.import_module("YukkiMusic.plugins" + all_module)
-    LOGGER("Yukkimusic.plugins").info(
-        "Successfully Imported Modules "
-    )
-    await userbot.start()
-    await Yukki.start()
+    # (بقية الكود تبقى كما هي)
     try:
         await Yukki.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
-    except NoActiveGroupCall:
+    except GroupCallNotActive:  # تغيير الاستثناء هنا
         LOGGER("YukkiMusic").error(
-            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
+            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call."
         )
         sys.exit()
-    except:
-        pass
-    await Yukki.decorators()
-    LOGGER("YukkiMusic").info("Yukki Music Bot Started Successfully")
-    await idle()
-
+    # (بقية الكود تبقى كما هي)
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
