@@ -15,7 +15,7 @@ psutil
 pytgcalls==0.13.0
 ntgcalls>=1.2.0,<1.3.0
 pykeyboard
-pyrogram==1.4.16
+pyrogram==1.3.5
 python-dotenv
 pyyaml==5.3.1
 requests
