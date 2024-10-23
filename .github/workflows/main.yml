@@ -1,32 +1,33 @@
-name: Run YukkiMusic Bot
+name: Python application
 
 on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  install_dependencies:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
 
-    - name: Upgrade pip
-      run: python -m pip install --upgrade pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f "YukkiMusic/requirements.txt" ]; then
+            pip install -r YukkiMusic/requirements.txt
+          else
+            echo "requirements.txt not found in YukkiMusic directory!"
+            exit 1
+          fi
 
-    - name: Install dependencies
-      run: |
-        if [ -f "YukkiMusic/requirements.txt" ]; then
-          pip install -r YukkiMusic/requirements.txt
-        else
-          echo "Error: requirements.txt not found in YukkiMusic directory!"
-          exit 1
-        fi
-
-    - name: Run YukkiMusic Bot
-      run: python YukkiMusic/__main__.py
+      - name: Run bot
+        run: python YukkiMusic/__main__.py
