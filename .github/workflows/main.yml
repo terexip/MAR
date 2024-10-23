@@ -24,7 +24,7 @@ jobs:
         if [ -f "YukkiMusic/requirements.txt" ]; then
           pip install -r YukkiMusic/requirements.txt || {
             echo "Fixing dependencies in requirements.txt..."
-            sed -i 's/pytgcalls==1.2.0/pytgcalls>=0.0.2,<1.3.0/' YukkiMusic/requirements.txt
+            sed -i 's/pytgcalls==1.2.0/pytgcalls>=0.0.2,<2.0.0/' YukkiMusic/requirements.txt
             pip install -r YukkiMusic/requirements.txt
           }
         else
