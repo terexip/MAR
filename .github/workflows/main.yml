@@ -23,11 +23,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f "YukkiMusic/requirements.txt" ]; then
-            pip install -r YukkiMusic/requirements.txt
+            # تثبيت المكتبات من requirements.txt
+            pip install -r YukkiMusic/requirements.txt || {
+              echo "خطأ في تثبيت المكتبات، سوف أقوم بتحديث المكتبات."
+              pip install --upgrade --force-reinstall -r YukkiMusic/requirements.txt
+            }
           else
-            echo "requirements.txt not found in YukkiMusic directory!"
+            echo "requirements.txt غير موجود في دليل YukkiMusic!"
             exit 1
           fi
+
+      - name: Check and update requirements
+        run: |
+          pip freeze > YukkiMusic/requirements.txt
 
       - name: Run bot
         run: python YukkiMusic/__main__.py
