@@ -1,35 +1,30 @@
 name: Run YukkiMusic Bot
 
 on:
-  push:
-    branches:
-      - main  # يمكنك تعديل هذا إلى الفرع الذي تعمل عليه
-  pull_request:
-    branches:
-      - main  # يمكنك تعديله أيضًا
-  workflow_dispatch:  # يتيح لك تشغيل الـ Workflow يدويًا
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'  # تأكد من استخدام نفس إصدار بايثون الذي تستخدمه في مشروعك
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then
-          pip install -r requirements.txt || true  # يحاول تثبيت المكتبات ويمرر الأخطاء
-        fi
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt || pip install pyrogram
 
-    - name: Run bot
-      run: python YukkiMusic/__main__.py  # تشغيل البوت من المسار الصحيح
-      env:
-        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}  # استخدام المتغير السري
+      - name: Verify dependencies
+        run: |
+          pip freeze > requirements.txt
+
+      - name: Run bot
+        run: |
+          python YukkiMusic/__main__.py
