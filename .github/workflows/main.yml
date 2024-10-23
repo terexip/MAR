@@ -14,7 +14,16 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'  # استخدم إصدار بايثون المناسب
+        python-version: '3.9'
+
+    - name: Check for requirements.txt
+      run: |
+        if [ -f "YukkiMusic/requirements.txt" ]; then
+          echo "requirements.txt found."
+        else
+          echo "requirements.txt not found!"
+          exit 1
+        fi
 
     - name: Install dependencies
       run: |
