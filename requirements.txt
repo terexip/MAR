@@ -15,7 +15,7 @@ psutil
 ntgcalls>=1.2.0,<1.3.0
 pykeyboard
 pyrogram==1.3.5
-pytgcalls==1.0.0  # أو أي إصدار أحدث متوفر
+pytgcalls==2.0.0  # أو أي إصدار أحدث متوفر
 TgCrypto
 python-dotenv
 pyyaml==5.3.1
