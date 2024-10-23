@@ -21,16 +21,42 @@ jobs:
 
     - name: Install required packages
       run: |
-        if [ -f "YukkiMusic/requirements.txt" ]; then
-          pip install -r YukkiMusic/requirements.txt || {
-            echo "Fixing dependencies in requirements.txt..."
-            sed -i 's/pytgcalls==1.2.0/pytgcalls>=0.0.2,<2.0.0/' YukkiMusic/requirements.txt
-            pip install -r YukkiMusic/requirements.txt
-          }
-        else
-          echo "requirements.txt not found in YukkiMusic directory!"
-          exit 1
-        fi
+        pip install aiofiles
+        pip install "aiohttp>=3.9.3,<4.0"
+        pip install dnspython
+        pip install ffmpeg-python
+        pip install gitpython
+        pip install hachoir
+        pip install heroku3
+        pip install lyricsgenius
+        pip install "motor>=3.1,<4.0"
+        pip install "pymongo>=4.5,<5.0"
+        pip install flask
+        pip install flask_restful
+        pip install pillow
+        pip install psutil
+        pip install "ntgcalls>=1.2.0,<1.3.0"
+        pip install pykeyboard
+        pip install pyrogram==1.3.5
+        pip install "pytgcalls==1.0.0"  # أو أي إصدار أحدث متوفر
+        pip install TgCrypto
+        pip install python-dotenv
+        pip install pyyaml==5.3.1
+        pip install requests
+        pip install telegraph
+        pip install gpytranslate
+        pip install speedtest-cli
+        pip install spotipy
+        pip install tgcrypto
+        pip install Flask==2.2.2
+        pip install gunicorn==21.2.0
+        pip install youtube-search
+        pip install youtube-search-python
+        pip install "multidict>=4.5,<7.0"
+        pip install "yarl>=1.0,<2.0"
+        pip install git+https://github.com/yt-dlp/yt-dlp.git
+        pip install git+https://github.com/joetats/youtube_search@master
+        pip install git+https://github.com/alexmercerind/youtube-search-python@main
 
     - name: Run the bot
       run: python YukkiMusic/__main__.py
