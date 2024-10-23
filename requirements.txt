@@ -13,7 +13,7 @@ flask_restful
 pillow
 psutil
 py-tgcalls==2.0.4
-ntgcalls==0.1.1
+ntgcalls==1.0.7
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
