@@ -19,16 +19,13 @@ jobs:
         with:
           python-version: '3.9'  # اختر الإصدار المناسب من بايثون
 
-      - name: Install Python dependencies
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-
-      - name: Run Python script to install libraries
-        run: |
+          python -m pip install -r requirements.txt  # تثبيت المكتبات من ملف requirements.txt
           python install_requirements.py  # تشغيل السكربت لتثبيت المكتبات
 
       - name: Run Bot
         env:
           Bot_Token: ${{ secrets.Bot_Token }}  # استبدل هذا باسم السر الخاص بك
-        run: |
-          python -m YukkiMusic || true  # تجاوز الأخطاء عند تشغيل البوت
+        run: python -m YukkiMusic || true  # تجاوز الأخطاء عند تشغيل البوت
