@@ -30,6 +30,6 @@ jobs:
         fi
 
     - name: Run bot
-      run: python path/to/your/bot.py  # عدل المسار إلى bot.py الخاص بك
+      run: python YukkiMusic/__main__.py  # تشغيل البوت من المسار الصحيح
       env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}  # استخدام المتغير السري
