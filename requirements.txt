@@ -1,5 +1,5 @@
 aiofiles
-aiohttp
+aiohttp>=3.9.3
 asyncio
 dnspython
 ffmpeg-python
@@ -12,7 +12,8 @@ flask
 flask_restful
 pillow
 psutil
-py-tgcalls
+py-tgcalls==2.0.4
+ntgcalls==0.1.1
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
