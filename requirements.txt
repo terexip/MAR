@@ -7,7 +7,7 @@ gitpython
 hachoir
 heroku3
 lyricsgenius
-motor==3.1.0
+motor==3.6.0
 flask>=2.0,<3.0
 flask_restful
 pillow
