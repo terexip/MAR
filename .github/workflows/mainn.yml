@@ -22,8 +22,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt  # تثبيت المكتبات من ملف requirements.txt
-          python install_requirements.py  # تشغيل السكربت لتثبيت المكتبات
+          pip install -r requirements.txt --use-feature=2020-resolver  # استخدام خيار الحل الجديد للمكتبات
 
       - name: Run Bot
         env:
