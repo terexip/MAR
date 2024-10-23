@@ -1,17 +1,16 @@
-name: Auto Run YukkiMusic Bot
+name: Run YukkiMusic Bot
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # تشغيل البوت كل ساعة
   push:
     branches:
       - main  # يمكنك تعديل هذا إلى الفرع الذي تعمل عليه
   pull_request:
     branches:
       - main  # يمكنك تعديله أيضًا
+  workflow_dispatch:  # يتيح لك تشغيل الـ Workflow يدويًا
 
 jobs:
-  run-bot:
+  build:
     runs-on: ubuntu-latest
 
     steps:
