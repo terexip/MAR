@@ -1,20 +1,21 @@
 aiofiles
-aiohttp>=3.9.3
+aiohttp>=3.9.3,<4.0
+asyncio
 dnspython
 ffmpeg-python
 gitpython
 hachoir
 heroku3
 lyricsgenius
-motor==3.6.0  # أو الإصدار الأحدث
-flask==2.2.2
+motor==3.1.0
+flask>=2.0,<3.0
 flask_restful
 pillow
 psutil
 pytgcalls==1.0.0
 ntgcalls>=1.2.0,<1.3.0
 pykeyboard
-pymongo==3.12.1  # تأكد من توافقه مع motor
+pymongo>=3.12.0,<4.0
 pyrogram==1.4.16
 python-dotenv
 pyyaml==5.3.1
@@ -24,10 +25,11 @@ gpytranslate
 speedtest-cli
 spotipy
 tgcrypto
-Flask==2.2.2
 gunicorn==21.2.0
 youtube-search
 youtube-search-python
+multidict>=4.5,<7.0
+yarl>=1.0,<2.0
 git+https://github.com/yt-dlp/yt-dlp.git
 git+https://github.com/joetats/youtube_search@master
 git+https://github.com/alexmercerind/youtube-search-python@main
